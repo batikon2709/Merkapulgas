@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Restaurantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            color: #333;
+            margin: 0;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092'); /* Imagen de fondo representando comida */
+            background-size: cover;
+            background-position: center;
+            filter: blur(3px); /* Desenfoque del fondo */
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(0px); /* Mantiene el contenido nítido */
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para resaltar el texto */
+            margin-bottom: 20px;
+        }
+        .restaurant-list {
+            list-style: none;
+            padding: 0;
+        }
+        .restaurant-item {
+            background: linear-gradient(135deg, #d4a017, #b8860b); /* Degradado en colores mostaza */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .restaurant-item a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #8b6c1a;
+            transition: background-color 0.3s;
+        }
+        .restaurant-item a:hover {
+            background-color: #6f5013;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>Restaurantes Recomendados 🍽️</h1>
+        <ul class="restaurant-list">
+            <li class="restaurant-item">
+                <span>Hojarasca</span>
+                <a href="https://wa.me/573134866079" target="_blank">WhatsApp</a>
+            </li>
+            <li class="restaurant-item">
+                <span>Valle de María</span>
+                <a href="https://wa.me/573213847544" target="_blank">WhatsApp</a>
+            </li>
+            <li class="restaurant-item">
+                <span>Leños</span>
+                <a href="https://wa.me/573203298297" target="_blank">WhatsApp</a>
+            </li>
+            <li class="restaurant-item">
+                <span>Frutos del Paraíso</span>
+                <a href="https://wa.me/573218662121" target="_blank">WhatsApp</a>
+            </li>
+            <li class="restaurant-item">
+                <span>Anticuario</span>
+                <a href="https://wa.me/573023570143" target="_blank">WhatsApp</a>
+            </li>
+            <li class="restaurant-item">
+                <span>Ricuras del Mar</span>
+                <a href="https://wa.me/573154389973" target="_blank">WhatsApp</a>
+            </li>
+            <li class="restaurant-item">
+                <span>Thaddaeus</span>
+                <a href="https://wa.me/573137659375" target="_blank">WhatsApp</a>
+            </li>
+            <li class="restaurant-item">
+                <span>Paso al Gusto</span>
+                <a href="https://wa.me/573244897934" target="_blank">WhatsApp</a>
+            </li
+        </ul>
+    </div>
+</body>
+</html>
